@@ -1,16 +1,18 @@
 import { ConnectWallet } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 
+const stakingContractAddress = "0x788440FeA8673600428c2F7acd0226DB6b58CA8C";
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://thirdweb.com/">thirdweb</a>!
+         Welcome to the NFTEarth Staking Rewards Program!
         </h1>
 
         <p className={styles.description}>
-          Get started by configuring your desired network in{" "}
+          Get started by connecting your wallet and making sure you have your Balancer Pool Tokens from Balancer.
           <code className={styles.code}>pages/_app.js</code>, then modify the{" "}
           <code className={styles.code}>pages/index.js</code> file!
         </p>
@@ -20,29 +22,27 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="https://portal.thirdweb.com/" className={styles.card}>
-            <h2>Portal &rarr;</h2>
+          <a href="https://nftearth.exchange/" className={styles.card}>
+            <h2>NFTEarth &rarr;</h2>
             <p>
-              Guides, references and resources that will help you build with
-              thirdweb.
+              The NFTEarth application - head here to check out the platform and learn about the protocol building the future of NFTFi
             </p>
           </a>
 
-          <a href="https://thirdweb.com/dashboard" className={styles.card}>
-            <h2>Dashboard &rarr;</h2>
+          <a href="https://portal.arbitrum.io" className={styles.card}>
+            <h2>Arbitrum One Portal &rarr;</h2>
             <p>
-              Deploy, configure and manage your smart contracts from the
-              dashboard.
+              Check out all the awesome apps already on the leading Layer2 network Arbitrum!
             </p>
           </a>
 
           <a
-            href="https://portal.thirdweb.com/templates"
+            href="https://app.balancer.fi/#/arbitrum/swap"
             className={styles.card}
           >
-            <h2>Templates &rarr;</h2>
+            <h2>Balancer &rarr;</h2>
             <p>
-              Discover and clone template projects showcasing thirdweb features.
+              Head to the Balancer DEX on Arbitrum to swap.
             </p>
           </a>
         </div>
